@@ -10,6 +10,7 @@
       local('STZhongsong')
       url('STZhongsong.ttf') format('ttf'),
       local('张海山草泥马体');
+      url('张海山草泥马体.ttf') format('ttf');
 }
 
 body {

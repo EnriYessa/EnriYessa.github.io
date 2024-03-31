@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SmallPuzzle</title>
+    <script src="SPscript.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.1.1/chroma.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script> -->
+    <link rel="stylesheet" href="SPcss.css">
+  </head>
+  <body>
+    <!-- <div id="p5-background"></div> -->
+    <div id="initial">
+      <h1 id="h11"><br>Come Here and Get some</h1>
+      <h1 id="h12">Sense!</h1><p>(KPOP专区)</p><br>
+      <button id="start" class="center" onclick="svt(); start();">click me to continue</button>
+    </div>
+    <div id="one" style="display: none;" class="container">
+      <h1>   第一题</h1>
+      <p>韩国知名男子偶像团体seventeen有几个人？</p><br>
+      <button class="center" onclick="no();">A: 9</button><br><br><br>
+      <button class="center" onclick="no();">B: 11</button><br><br><br>
+      <button class="center" onclick="yes();">C: 13</button><br><br><br>
+      <button class="center" onclick="no();">D: 17</button><br><br><br>
+      <button class="center" id="an1" onclick="answer1();">查看答案</button>
+      <button class="right" onclick="xjd();">下一题</button>
+      <div id="answer1" style="display: none" class="popup">
+        <h2>  答案: C</h2>
+        <img src="https://th.bing.com/th/id/R.585084d2ac74798a770260642720891e?rik=aKS0996kDZi9ng&pid=ImgRaw&r=0" height="230px" class="image">
+        <p class="an" style = "font-size: 1em;">SEVENTEEN（세븐틴）是HYBE旗下厂牌Pledis Entertainment于2015年5月26日推出的男子组合，由崔胜哲（S.COUPS）、尹净汉（JEONGHAN）、洪知秀（JOSHUA）、文俊辉（JUN）、权顺荣（HOSHI）、全圆佑（WONWOO）、李知勋（WOOZI）、李硕珉（DK）、金珉奎（MINGYU）、徐明浩（THE8）、夫胜宽（SEUNGKWAN）、崔韩率（VERNON）、李灿（DINO）13名成员组成，其中有9位韩国成员，1位美籍混血成员、1位美籍韩裔成员和2位中国成员，分为嘻哈队、表演队、主唱队3个小分队。SEVENTEEN代表13名成员+ 3个分队+ 1个团体。</p>
+        <button onclick="closePopup1()" class="close">关闭</button>
+      </div>
+    </div>
+    <div id="two" style="display: none;" class="container">
+      <h1>   第二题</h1>
+      <p>请填空：我si____ 啊~咦呵~呵~</p><br>
+      <button class="center" onclick="no();">A: 渣渣灰</button><br><br><br>
+      <button class="center" onclick="yes();">B: 徐俊大</button><br><br><br>
+      <button class="center" onclick="no();">C: 蓝精灵</button><br><br><br>
+      <button class="center" onclick="no();">D: 朴灿烈</button><br><br><br>
+      <button class="left" onclick="svt2();">上一题</button>
+      <button class="center" id="an2" onclick="answer2();">查看答案</button>
+      <button class="right" onclick="chs();">下一题</button>
+      <div id="answer2" style="display: none" class="popup">
+        <h2>  答案: B</h2>
+        <video width="550px" controls style="display: block; margin: auto;">
+          <source src="徐俊大.mp4" type="video/mp4">
+        </video>
+        <button onclick="closePopup2()" class="close">关闭</button>
+      </div>
+    </div>
+    <div id="three" style="display: none;" class="container">
+      <h1>   第三题</h1>
+      <p>请听语音：</p>
+      <audio src="你叫什么名字.m4a" controls style="display: block; margin: auto;">
+      </audio>
+      <p>请问接下来应该回答什么？</p><br>
+      <button class="center" onclick="no();">A: 吹汉帅</button><br><br><br>
+      <button class="center" onclick="no();">B: 李肿颤</button><br><br><br>
+      <button class="center" onclick="yes();">C: 窝不直捣</button><br><br><br>
+      <button class="center" onclick="no();">D: 李颤</button><br><br><br>
+      <button class="left" onclick="xjd2();">上一题</button>
+      <button class="right" onclick="lzm();">下一题</button>
+      <button class="center" id="an3" onclick="answer3();">查看答案</button>
+      <div id="answer3" style="display: none" class="popup">
+        <h2>  答案: C</h2>
+        <video width="550px" controls style="display: block; margin: auto;">
+          <source src="你叫什么名字.mp4" type="video/mp4">
+        </video>
+        <button onclick="closePopup3()" class="close">关闭</button>
+      </div>
+    </div>
+    <div id="four" style="display: none;" class="container">
+      <h1>   第四题</h1>
+      <p>请填空：新疆___，夜三半更到___。</p><br>
+      <button class="center" onclick="no();">A: 葡萄甜，乌鲁木齐</button><br><br><br>
+      <button class="center" onclick="no();">B: 葡萄香，呼和浩特</button><br><br><br>
+      <button class="center" onclick="yes();">C: 葡萄大，拉萨</button><br><br><br>
+      <button class="center" onclick="no();">D: 葡萄干，西宁</button><br><br><br>
+      <button class="left" onclick="chs2();">上一题</button>
+      <button class="right" onclick="win();">下一题</button>
+      <button class="center" id="an4" onclick="answer4();">查看答案</button>
+      <div id="answer4" style="display: none" class="popup">
+        <h2>  答案: C</h2>
+        <video width="550px" controls style="display: block; margin: auto;">
+          <source src="新疆葡萄.mp4" type="video/mp4">
+        </video>
+        <button onclick="closePopup4()" class="close">关闭</button>
+      </div>
+    </div>
+    <div id="five" style="display: none;" class="container">
+      <h1>   第五题</h1>
+      <p>请看视频，推测视频后人马上会说什么。</p>
+      <video width="700px" controls style="display: block; margin: auto;">
+        <source src="苏坡扣马比.mp4" type="video/mp4">
+      </video><br>
+      <button class="center" onclick="no();">A: 非常好看</button><br><br><br>
+      <button class="center" onclick="yes();">B: 色彩非常鲜艳</button><br><br><br>
+      <button class="center" onclick="no();">C: 我很喜欢</button><br><br><br>
+      <button class="center" onclick="no();">D: 特别舒服</button><br><br><br>
+      <button class="left" onclick="lzm2();">上一题</button>
+      <button class="right" onclick="nose();">下一题</button>
+      <button class="center" id="an5" onclick="answer5();">查看答案</button>
+      <div id="answer5" style="display: none" class="popup">
+        <h2>  答案: B</h2>
+        <video width="550px" controls style="display: block; margin: auto;">
+          <source src="苏坡扣马鼻.mp4" type="video/mp4">
+        </video>
+        <button onclick="closePopup5()" class="close">关闭</button>
+      </div>
+    </div>
+    </div>
+    <div id="six" style="display: none;" class="container">
+      <h1>   第六题</h1>
+      <p>在韩国想要获得L型高鼻应该去哪家公司进行改造？</p><br>
+      <button class="center" onclick="yes();">A: HYBE</button><br><br><br>
+      <button class="center" onclick="no();">B: SM</button><br><br><br>
+      <button class="center" onclick="no();">C: YG</button><br><br><br>
+      <button class="center" onclick="no();">D: JYP</button><br><br><br>
+      <button class="left" onclick="win2();">上一题</button>
+      <button class="right" onclick="wait();">下一题</button>
+      <button class="center" id="an6" onclick="answer6();">查看答案</button>
+      <div id="answer6" style="display: none" class="popup">
+        <h2>  答案: A</h2>
+        <img src="https://images.luvkpop.com/uploads/2022/04/20220430183957100.jpg" height="330px" class="image">
+        <p class = "an">HYBE公司推出的较新团体基本上都拥有同款鼻子。</p>
+        <button onclick="closePopup6()" class="close">关闭</button>
+      </div>
+    </div>
+    <div id="seven" style="display: none;">
+      <br>
+      <p id="wait">未完待续……</p>
+    </div>
+  </body>
+  <!-- <script>
+    let palettes = [
+    ["#cb417f", "#e05ca4", "#edc0dd", "#deae94", "#cbf7c2", "#2b6860"],
+    ["#2d4c61", "#7a6074", "#e7faa5", "#ede070", "#6ba6a8", "#376c94"],
+    ["#4ad3c8", "#c69322", "#c0bd9b", "#a08b8d", "#005e84", "#42a5e4", "#02c287"],
+    ["#e70617", "#c15a01", "#458075", "#57d0c9", "#b7667d", "#ee80b3", "#b92b09"]
+    ]
+
+    let fireFlies = []
+    let colors
+
+    function setup() {
+      let cnv = createCanvas(windowWidth, windowHeight);
+      background(255, 0);
+      cnv.position(0, 0); // 设置画布位置为 (0, 0)
+      cnv.style('z-index', '-1'); // 将画布放到底层，以便其他元素在上层显示
+      colors = random(palettes)
+      shuffle(colors, true)
+
+      for (let i = 0; i < 100; i++) {
+        fireFlies.push(new fireFly(random(width), random(height)))
+      }
+    }
+
+    function draw() {
+      clear(); // 清除画布上的内容，保证画布是透明的
+      for (let f of fireFlies) {
+        f.update();
+        f.relate();
+        f.mutate();
+        f.display();
+      }
+    }
+
+    class fireFly {
+      constructor(x, y) {
+        this.pos = createVector(x, y)
+        this.color = random(colors)
+        this.vel = createVector(0, 0)
+        this.acc = p5.Vector.random2D();
+        this.acc.setMag(0.01)
+        this.lit = 0
+        this.newColor = NaN
+        this.angle = this.vel.heading()
+      }
+
+      update() {
+        this.acc.setMag(0.015)
+        this.vel.add(this.acc);
+        this.vel.limit(1)
+        this.pos.add(this.vel)
+        this.angle = this.vel.heading()
+
+        // 边界处理
+        if (this.pos.x < -10) {
+          this.pos.x = width + 10
+        }
+        if (this.pos.x > width + 10) {
+          this.pos.x = -10
+        }
+        if (this.pos.y < -10) {
+          this.pos.y = height + 10
+        }
+        if (this.pos.y > height + 10) {
+          this.pos.y = -10
+        }
+      }
+
+      relate() {
+        for (let j = 0; j < fireFlies.length; j++) {
+          let index = fireFlies.indexOf(this)
+          let distance = p5.Vector.dist(this.pos, fireFlies[j].pos)
+          if (distance < 30 && j !== index) {
+
+            if (this.lit > 50) {
+              let force = p5.Vector.sub(fireFlies[j].pos, this.pos)
+              let forceMag = map(distance, 30, 0, 0.001, 0.01)
+              force.setMag(forceMag)
+              this.acc.add(force)
+            }
+
+            if (this.lit == 0 && distance < 20) {
+              this.lit = 100
+            }
+
+            if (this.lit == 100) {
+              let c1 = fireFlies[j].color
+              this.newColor = chroma.mix(c1, this.color, random(0.1, 0.9))
+
+            }
+          }
+        }
+        if (this.lit == 1) {
+          this.color = this.newColor
+        }
+
+      }
+
+      mutate() {
+        let r = random()
+        if (r < 0.0002) {
+          let c = colorMixer(this.pos, colors)
+          this.color = c
+        }
+
+      }
+
+      display() {
+        if (this.lit > 0) {
+          this.lit--
+        }
+        push()
+        translate(this.pos.x, this.pos.y)
+        rotate(this.angle)
+        noStroke()
+        fill(0)
+        drawingContext.shadowBlur = 30;
+        drawingContext.shadowColor = this.color;
+        let colorAlpha = map(abs(this.lit - 50), 0, 50, 255, 0)
+        let c1 = color(this.color)
+        c1.setAlpha(colorAlpha)
+        let c2 = color(this.color)
+        c2.setAlpha(0)
+        push()
+        let coloring = drawingContext.createRadialGradient(0, 0, 0.01, 0, 0, 20)
+        coloring.addColorStop(0, c1)
+        coloring.addColorStop(0.9, c2)
+        drawingContext.fillStyle = coloring
+        ellipse(0, 0, 21, 19)
+        pop()
+        fill(c1)
+        ellipse(0, 0, 7, 3)
+        pop()
+      }
+     }
+
+
+     function colorMixer(pos, colorArray) {
+
+     	let c = noise(pos.x/200, pos.y/200)*colorArray.length
+     	let c1 = floor(c)
+     	let c2 = floor(c+1)%colorArray.length
+     	let color1 = colorArray[c1]
+     	let color2 = colorArray[c2]
+     	let mix = fract(c)
+     	let coloring = chroma.mix(color1, color2, mix)
+     	return coloring
+     }
+  </script> -->
+</html>

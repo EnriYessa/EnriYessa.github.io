@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'Matura MT Script Capitals', '04b_03',
+     'STZhongsong', serif, '张海山草泥马体';
+    font-style: normal;
+    font-weight: normal;
+    src:
+      local('Matura MT Script Capitals'),
+      url('MATURASC_1.woff') format('woff'),
+      local('04b_03'),
+      local('STZhongsong')
+      url('STZhongsong.ttf') format('ttf'),
+      local('张海山草泥马体');
+}
+
+body {
+  background-color: black;
+}
+
+#h11 {
+  font-family: 'Matura MT Script Capitals';
+  text-align: center;
+  font-size: 7.0em;
+  color: white;
+}
+
+#h12 {
+  font-family: 'Matura MT Script Capitals';
+  text-align: center;
+  font-size: 8.0em;
+  color: white;
+}
+
+#start {
+  font-family: '04b_03';
+  color: yellow;
+  text-align: center;
+  font-size: 2.0em;
+  background-color: black;
+}
+
+
+.container {
+  width: 1200px; /* 宽度为1200px */
+  height: auto; /* 高度自适应 */
+  background-color: rgb(50, 50, 50); /* 浅灰色背景 */
+  margin: 40px auto; /* 左右自动居中 */
+  border-radius: 10px; /* 四角弯度为5px */
+  box-shadow: 20px 20px 30px rgba(20, 20, 20); /* 阴影效果 */
+  padding: 20px 20px 100px 20px; /* 内边距 */
+}
+
+
+.center {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.right {
+  position: absolute;
+  right: 20%;
+}
+
+.left {
+  position: absolute;
+  left: 20%;
+}
+
+h1 {
+  font-family: 'STZhongsong';
+  color: white;
+}
+
+h2 {
+  font-family: 'STZhongsong';
+  color: black;
+}
+
+p {
+  font-family: '张海山草泥马体';
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+button {
+  padding: 5px 10px;
+  background-color: black;
+  font-family: '张海山草泥马体';
+  color: white;
+  text-align: left;
+  font-size: 1.5em;
+}
+
+#seven {
+  font-family: '张海山草泥马体';
+  color: white;
+  text-align: center;
+  top: 50%;
+  font-size: 7em;
+}
+
+/* 弹出框样式 */
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 730px;
+  height: 500px;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.close {
+  position: absolute;
+  top: 85%;
+  right: 10%;
+}
+
+.an {
+  font-family: '张海山草泥马体';
+  text-align: justify;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.image {
+  position: relative;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#p5-background {
+      position: fixed; /* 将画布固定在页面上 */
+      top: 0; /* 从页面顶部开始 */
+      left: 0; /* 从页面左侧开始 */
+      z-index: -1; /* 将画布放到最底层 */
+    }

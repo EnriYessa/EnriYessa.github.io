@@ -7,9 +7,10 @@
       local('Matura MT Script Capitals'),
       url('MATURASC_1.woff') format('woff'),
       local('04b_03'),
-      local('STZhongsong')
+      url('04b_03'),
+      local('STZhongsong'),
       url('STZhongsong.ttf') format('ttf'),
-      local('张海山草泥马体');
+      local('张海山草泥马体'),
       url('张海山草泥马体.ttf') format('ttf');
 }
 

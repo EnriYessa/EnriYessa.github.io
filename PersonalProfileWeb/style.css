@@ -1,0 +1,498 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Noto+Serif+SC:wght@400;500;600;700;900&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+:root {
+  --pink: #F090A7;
+  --green: #789828;
+  --lightgreen: #A8C060;
+  --blue: #B8C8C8;
+  --bggreen: #D8F0E0;
+}
+
+.lexend-menu {
+  font-family: "Lexend", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.nav-item .nav-link span {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-size: 1.4em;
+  font-style: normal;
+}
+
+.noto-serif sc-regular {
+  font-family: "Noto Serif SC", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.noto-serif sc-medium {
+  font-family: "Noto Serif SC", serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.noto-serif sc-semibold {
+  font-family: "Noto Serif SC", serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.noto-serif sc-bold {
+  font-family: "Noto Serif SC", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.noto-serif sc-black {
+  font-family: "Noto Serif SC", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  background-color: '#D8F0E0';
+}
+
+
+.gif-container {
+  display: inline-block;
+  position: relative;
+}
+
+#coverW {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 8vw;
+  position: absolute;
+  left: 10%;
+  bottom: 50%;
+  text-shadow: -4px -3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#coverM {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 8vw;
+  position: absolute;
+  left: 10%;
+  bottom: 26%;
+  text-shadow: -4px -3px 3px rgba(0, 0, 0, 0.2);
+}
+
+#wl {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-size: 8vw;
+}
+
+#cte {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 1.5vw;
+  position: absolute;
+  left: 55%;
+  top: 80%;
+  padding: 0.3em 1.5em;
+  color: #789828;
+  border: 1px solid #789828;
+}
+
+#brief:hover {
+  color: #000000;
+}
+
+#brief {
+  font-family: "Lora", serif;
+  font-weight: 400;
+  font-size: 1.5vw;
+  position: absolute;
+  left: 75%;
+  top: 80%;
+  padding: 0.3em 1.5em;
+  color: #789828;
+  border: 1px solid #789828;
+}
+
+#lemonland {
+  opacity: 0; /* 初始设置为隐藏 */
+  transform: translateY(50px); /* 初始设置为向下偏移，使内容在动画开始时位于视图之外 */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* 添加过渡效果 */
+}
+
+@media (max-width:576px) {
+  .navbar-collapse {
+    background-color: #f8f9fa; /* 设置下拉菜单的背景色为灰色 */
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    margin-left: 25vw;
+  }
+  to {
+    margin-left: 19vw;
+  }
+}
+
+#mySVG {
+  animation: slideLeft 1s forwards; /* 持续1秒的左滑动动画 */
+}
+
+.custom-navbar {
+  background-color: transparent !important;
+}
+
+
+@keyframes slideRight {
+  from {
+    padding-left: 0;
+  }
+  to {
+    padding-left: 10vw;
+  }
+}
+
+#title {
+  animation: slideRight 1s forwards; /* 持续1秒的左滑动动画 */
+}
+
+
+.navbar-nav.nav-pills .nav-link {
+  color: #000000;
+  font-size: 1.5em;
+  background-color: transparent;
+}
+.navbar-nav.nav-pills .nav-link:hover {
+  color: var(--lightgreen);
+}
+
+@keyframes expand {
+  from {
+    width: 150px;
+  }
+  to {
+    width: 350px;
+  }
+}
+
+#lere {
+  animation: expand 1s forwards;
+  margin-top: 140px;
+  margin-left: 100px;
+}
+
+@keyframes expand1 {
+  from {
+    width: 50px;
+  }
+  to {
+    width: 100px;
+  }
+}
+
+#lere1 {
+  animation: expand1 1s forwards;
+  transform: scale(1, -1);
+  margin-left: 50px;
+}
+
+.heading {
+  text-align: center;
+  font-family: "Lexend", sans-serif;
+  font-weight: bold;
+  font-size: 3.5rem;
+  color: var(--pink);
+  padding: 1rem;
+  margin: 2rem 0;
+  background: var(--bggreen);
+}
+
+.heading span {
+  color: var(--green);
+}
+
+#scrollspyHeading1 .img-container, #scrollspyHeading1 .content {
+  margin-bottom: 8vw;
+}
+
+#scrollspyHeading1 .img-container .divc img {
+  border-radius: 7rem;
+  box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+  left: 2rem
+}
+
+#scrollspyHeading1 .img-container .divc h3 {
+  position: absolute;
+  top: 45%;
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-size: 4vw;
+  background: #fdfdfa;
+  width: 100%;
+  padding: 1rem 2rem;
+  text-align: center;
+  mix-blend-mode: screen;
+}
+
+#scrollspyHeading1 .content p {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 600;
+  font-size: 2rem;
+  color: #444;
+  padding-left: 10px;
+}
+
+#scrollspyHeading1 .content .black {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 350;
+  font-size: 2rem;
+  color: #666;
+  padding-left: 10px;
+}
+
+#scrollspyHeading1 .content .pink {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 350;
+  font-size: 2rem;
+  color: var(--pink);
+  padding-left: 10px;
+}
+
+#scrollspyHeading1 .content .blue {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 350;
+  font-size: 2rem;
+  color: var(--blue);
+  padding-left: 10px;
+}
+
+#scrollspyHeading1 .content .btn {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 350;
+  font-size: 1.7rem;
+  color: var(--green);
+  border: .5px solid var(--green);
+  border-radius: 5rem;
+  margin-top: 20px;
+  padding: .5rem 1.5rem;
+}
+
+#scrollspyHeading1 .content .btn:hover {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 350;
+  font-size: 1.7rem;
+  color: #ffffff;
+  background-color: var(--green);
+  border: .5px solid var(--green);
+  border-radius: 5rem;
+  margin-top: 20px;
+  padding: .5rem 1.5rem;
+}
+
+#scrollspyHeading1 .icons-container .icons {
+  height: 15rem;
+  padding-top: 4vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: .1rem solid rgba(0, 0, 0, 0.1);
+}
+
+#scrollspyHeading1 .icons-container .icons i {
+  color: var(--lightgreen);
+  font-size: 7rem;
+}
+
+#scrollspyHeading1 .icons-container .icons .info h3 {
+  color: #666;
+  padding-left: 20px;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 350;
+}
+
+#scrollspyHeading1 .icons-container .icons .info span {
+  color: #666;
+  padding-left: 20px;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 350;
+}
+
+#scrollspyHeading4 .row {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  gap: 1.5rem;
+}
+
+#scrollspyHeading4 .row form {
+  flex: 1 1 40rem;
+  padding: 2rem 2.5rem;
+  box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, 0.1);
+  border: .1rem solid rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: .5rem;
+}
+
+#scrollspyHeading4 .row .image {
+  justify-content: center;
+  align-items: center;
+  padding-left: 100px;
+}
+
+#scrollspyHeading4 .row .image .normal {
+  width: 100%;
+  font-size: 20rem;
+  color: var(--green);
+}
+
+#scrollspyHeading4 .row .image .fa-flip-vertical {
+  width: 100%;
+  font-size: 7rem;
+  color: var(--pink);
+}
+
+#scrollspyHeading4 .row form .box {
+  padding: 1rem;
+  font-size: 1.5rem;
+  color: #444;
+  text-transform: none;
+  border: .1rem solid rgba(0, 0, 0, 0.1);
+  margin: .5rem 0;
+  width: 100%;
+}
+
+#scrollspyHeading4 .row form .box:focus {
+  border-color: var(--pink);
+}
+
+#scrollspyHeading4 .row form textarea {
+  height: 15rem;
+  resize: none;
+}
+
+#scrollspyHeading4 .row .btn {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 350;
+  font-size: 1.5rem;
+  color: var(--green);
+  border: .5px solid var(--green);
+  border-radius: 5rem;
+  margin-top: 20px;
+  padding: .5rem 1.5rem;
+}
+
+#scrollspyHeading4 .row .btn:hover {
+  font-family: 'Lexend', sans-serif;
+  font-weight: 350;
+  font-size: 1.5rem;
+  color: #ffffff;
+  background-color: var(--green);
+  border: .5px solid var(--green);
+  border-radius: 5rem;
+  margin-top: 20px;
+  padding: .5rem 1.5rem;
+}
+
+.footer .box-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-top: 5vw;
+  background-color: var(--bggreen);
+}
+
+.footer .box-container .box {
+  flex: 1 1 25rem;
+  border-top: .1rem solid rgba(0, 0, 0, 0.1);
+}
+
+.footer .box-container .box h3 {
+  color: #444;
+  font-size: 2.5rem;
+  padding: 1rem 0;
+  text-align: center;
+  font-family: 'Lexend', sans-serif;
+  font-weight: normal;
+}
+
+.footer .box-container .box a {
+  display: block;
+  color: #666;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 300;
+}
+
+.footer .box-container .box p {
+  display: block;
+  color: #666;
+  font-size: 1.5rem;
+  padding: .60rem 0;
+  text-align: center;
+  font-family: 'Lexend', sans-serif;
+  font-weight: 300;
+}
+
+.footer .box-container .box a:hover {
+  color: #333;
+  text-decoration: underline;
+}
+
+.footer .credit {
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: #444;
+  border-top: .1rem solid rgba(0, 0, 0, 0.1);
+  font-family: 'Lexend', sans-serif;
+  font-weight: normal;
+}
+
+.footer .credit span {
+  color: var(--green);
+}
+
+
+#scrollspyHeading2 .chart-container {
+  padding: 3vw;
+}
+
+#scrollspyHeading3 .card-container {
+  margin: 3vw 0;
+}
+
+#scrollspyHeading3 .card-container .cardd {
+  position: relative;
+  margin: 2vw 0;
+}
+
+#scrollspyHeading3 .card-container .cardd img {
+  border-radius: 1rem;
+  box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.1);
+  object-fit: cover;
+}
+
+#scrollspyHeading3 .card-container .cardd h4 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-family: "Lexend", sans-serif;
+  font-weight: 400;
+  font-size: 2.5rem;
+  background: #fdfdfa;
+  width: 100%;
+  padding: 1rem;
+  text-align: center;
+  mix-blend-mode: screen;
+}

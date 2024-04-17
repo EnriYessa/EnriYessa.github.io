@@ -91,24 +91,24 @@ body {
 
 @media (max-Width: 1024px) {
   #brush {
-    width: 100vw !important;
+    width: 80vw !important;
   }
   #coverW {
-    font-size: 4rem !important;
+    font-size: 4.5rem !important;
   }
 
   #coverM {
-    font-size: 4rem !important;
+    font-size: 4.5rem !important;
   }
 
   #wl {
-    font-size: 4rem !important;
+    font-size: 4.5rem !important;
   }
 
   #cte {
     font-family: "Lora", serif;
     font-weight: 400;
-    font-size: 2.5vw !important;
+    font-size: 3vw !important;
     position: absolute;
     left: 55%;
     top: 80%;
@@ -124,7 +124,7 @@ body {
   #brief {
     font-family: "Lora", serif;
     font-weight: 400;
-    font-size: 2.5vw !important;
+    font-size: 3vw !important;
     position: absolute;
     left: 55% !important;
     top: 90% !important;
@@ -625,6 +625,7 @@ body {
   padding: 1rem;
   text-align: center;
   mix-blend-mode: screen;
+  margin-right: 3vw;
 }
 
 @media (max-Width: 575.98px) {

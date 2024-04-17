@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Noto+Serif+SC:wght@400;500;600;700;900&family=Roboto+Slab:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
@@ -61,10 +60,83 @@ body {
   background-color: '#D8F0E0';
 }
 
+@media (max-Width: 575.98px) {
+  .navbar .container-fluid .navbar-brand img {
+    width: 120px !important;
+  }
+}
 
 .gif-container {
   display: inline-block;
   position: relative;
+}
+
+@media (max-Width: 575.98px) {
+  #brush {
+    width: 60vw !important;
+  }
+  #coverW {
+    font-size: 2.5vw !important;
+  }
+
+  #coverM {
+    font-size: 2.5vw !important;
+  }
+
+  #wl {
+    font-size: 2.5vw !important;
+  }
+}
+
+@media (max-Width: 1024px) {
+  #brush {
+    width: 100vw !important;
+  }
+  #coverW {
+    font-size: 4rem !important;
+  }
+
+  #coverM {
+    font-size: 4rem !important;
+  }
+
+  #wl {
+    font-size: 4rem !important;
+  }
+
+  #cte {
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-size: 2.5vw !important;
+    position: absolute;
+    left: 55%;
+    top: 80%;
+    padding: 0.3em 1.5em;
+    color: #789828;
+    border: 1px solid #789828;
+  }
+
+  #brief:hover {
+    color: #000000;
+  }
+
+  #brief {
+    font-family: "Lora", serif;
+    font-weight: 400;
+    font-size: 2.5vw !important;
+    position: absolute;
+    left: 55% !important;
+    top: 90% !important;
+    padding: 0.3em 1.5em;
+    color: #789828;
+    border: 1px solid #789828;
+  }
+}
+
+#brush {
+  position: absolute;
+  width: 60vw;
+  overflow: hidden;
 }
 
 #coverW {
@@ -187,6 +259,21 @@ body {
   animation: expand 1s forwards;
   margin-top: 140px;
   margin-left: 100px;
+  overflow: hidden;
+}
+
+@media (max-width: 575.98px) {
+  #lere {
+    margin-top: 8vw !important;
+    margin-left: 6vw !important;
+    width: 50vw !important;
+    overflow: hidden !important;
+  }
+  #lere1 {
+    transform: scale(1, -1);
+    width: 20vw !important;
+    margin-left: 3vw !important;
+  }
 }
 
 @keyframes expand1 {
@@ -224,23 +311,10 @@ body {
 }
 
 #scrollspyHeading1 .img-container .divc img {
-  border-radius: 7rem;
+  border-radius: 5rem;
   box-shadow: .5rem .5rem 1rem rgba(0, 0, 0, 0.1);
   object-fit: cover;
   left: 2rem
-}
-
-#scrollspyHeading1 .img-container .divc h3 {
-  position: absolute;
-  top: 45%;
-  font-family: "Lexend", sans-serif;
-  font-weight: 400;
-  font-size: 4vw;
-  background: #fdfdfa;
-  width: 100%;
-  padding: 1rem 2rem;
-  text-align: center;
-  mix-blend-mode: screen;
 }
 
 #scrollspyHeading1 .content p {
@@ -250,6 +324,30 @@ body {
   color: #444;
   padding-left: 10px;
 }
+
+@media (max-width: 575.98px) {
+  #scrollspyHeading1 .content p {
+    font-size: 1.5rem !important;
+  }
+  #scrollspyHeading1 .content .black {
+    font-size: 1.5rem !important;
+  }
+  #scrollspyHeading1 .content .pink {
+    font-size: 1.5rem !important;
+  }
+  #scrollspyHeading1 .content .blue {
+    font-size: 1.5rem !important;
+  }
+  #scrollspyHeading1 .content .btn {
+    font-size: 1.3rem !important;
+    padding: .3rem 1rem !important;
+  }
+  #scrollspyHeading1 .content .btn:hover {
+    font-size: 1.3rem !important;
+    padding: .3rem 1rem !important;
+  }
+}
+
 
 #scrollspyHeading1 .content .black {
   font-family: 'Lexend', sans-serif;
@@ -298,6 +396,22 @@ body {
   padding: .5rem 1.5rem;
 }
 
+@media (max-width: 575.98px) {
+  #scrollspyHeading1 .icons-container .icons {
+    height: 25vw !important;
+  }
+  #scrollspyHeading1 .icons-container .icons i {
+    font-size: 10vw !important;
+  }
+  #scrollspyHeading1 .icons-container .icons .info h3 {
+    padding-left: 2vw !important;
+  }
+
+  #scrollspyHeading1 .icons-container .icons .info span {
+    padding-left: 2vw !important;
+  }
+}
+
 #scrollspyHeading1 .icons-container .icons {
   height: 15rem;
   padding-top: 4vw;
@@ -309,7 +423,7 @@ body {
 
 #scrollspyHeading1 .icons-container .icons i {
   color: var(--lightgreen);
-  font-size: 7rem;
+  font-size: 6.5rem;
 }
 
 #scrollspyHeading1 .icons-container .icons .info h3 {
@@ -341,10 +455,25 @@ body {
   border-radius: .5rem;
 }
 
+@media (max-Width: 575.98px) {
+  #scrollspyHeading4 .row .image {
+    padding-left: 26vw !important;
+    overflow: hidden;
+  }
+  #scrollspyHeading4 .row .image .normal {
+    font-size: 40vw !important;
+  }
+
+  #scrollspyHeading4 .row .image .fa-flip-vertical {
+    font-size: 15vw !important;
+  }
+}
+
 #scrollspyHeading4 .row .image {
   justify-content: center;
   align-items: center;
   padding-left: 100px;
+  overflow: hidden;
 }
 
 #scrollspyHeading4 .row .image .normal {
@@ -495,4 +624,11 @@ body {
   padding: 1rem;
   text-align: center;
   mix-blend-mode: screen;
+}
+
+@media (max-Width: 575.98px) {
+  #scrollspyHeading3 .card-container .cardd h4 {
+    font-size: 6.5vw !important;
+    padding: 0;
+  }
 }
